@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eurovision – Acheter des tickets</title>
+    <link rel="stylesheet" href="styles copie.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <img src="/photos/eurovision-logo.png" alt="Logo Eurovision" class="logo" />
+
+    <div class="cover">
+      <img
+        src="/photos/Eurovision-2026.jpg"
+        alt="Image de tickets"
+        class="form-image"
+      />
+      <div class="cover-text">
+        <h1>Acheter<br />des tickets</h1>
+        <h2>Réservez vos billets en 3 étapes<br />simples et rapides !</h2>
+      </div>
+    </div>
+
+    <div class="form-container">
+      <h3>Commander en ligne</h3>
+      <p class="form-note">
+        *Les billets seront envoyés à votre adresse e-mail
+      </p>
+
+      <form>
+        <section>
+          <h4>1. Informations personnelles</h4>
+          <div class="personal-info">
+            <div class="field">
+              <label for="nom">Nom</label>
+              <input
+                id="nom"
+                type="text"
+                name="nom"
+                placeholder="Entrez votre nom"
+              />
+            </div>
+            <div class="field">
+              <label for="email">E-mail</label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Entrez votre nom"
+              />
+            </div>
+            <div class="field">
+              <label for="prenom">Prénom</label>
+              <input
+                id="prenom"
+                type="text"
+                name="prenom"
+                placeholder="Entrez votre prénom"
+              />
+            </div>
+            <div class="field">
+              <label for="telephone">Numéro de téléphone</label>
+              <input
+                id="telephone"
+                type="tel"
+                name="telephone"
+                placeholder="Entrez votre numéro de téléphone"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h4>2. Sélection de billets</h4>
+          <div class="container-selection-billets">
+            <div class="checkbox-group">
+              <p class="group-label">Évènement</p>
+              <div class="checkbox-item">
+                <input
+                  type="checkbox"
+                  id="ev1"
+                  name="evenement"
+                  value="demi-final-1"
+                />
+                <label for="ev1">Demi-final 1</label>
+                <span class="event-date">Mardi 12 Mai 2026, 21:00 CEST</span>
+              </div>
+              <div class="checkbox-item">
+                <input
+                  type="checkbox"
+                  id="ev2"
+                  name="evenement"
+                  value="demi-final-2"
+                />
+                <label for="ev2">Demi-final 2</label>
+                <span class="event-date">Jeudi 14 Mai 2026, 21:00 CEST</span>
+              </div>
+              <div class="checkbox-item">
+                <input
+                  type="checkbox"
+                  id="ev3"
+                  name="evenement"
+                  value="grand-final"
+                />
+                <label for="ev3">Grand Finale</label>
+                <span class="event-date">Samedi 16 Mai 2026, 21:00 CEST</span>
+              </div>
+            </div>
+
+            <div class="select-billets">
+              <p class="group-label">Type de billets</p>
+              <div class="billet-row">
+                <select id="billet-1" name="billet-1">
+                  <option value="standard">Standard</option>
+                  <option value="vip">VIP</option>
+                  <option value="fan-zone">Fan Zone</option>
+                </select>
+              </div>
+              <div class="billet-row">
+                <select id="billet-2" name="billet-2">
+                  <option value="standard">Standard</option>
+                  <option value="vip" selected>VIP</option>
+                  <option value="fan-zone">Fan Zone</option>
+                </select>
+              </div>
+              <div class="billet-row">
+                <select id="billet-3" name="billet-3">
+                  <option value="standard">Standard</option>
+                  <option value="vip">VIP</option>
+                  <option value="fan-zone" selected>Fan Zone</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="quantité-column">
+              <p class="group-label">Quantité</p>
+              <div class="quantité-row">
+                <div class="quantité-control">
+                  <button type="button" onclick="changeQty(this, -1)">−</button>
+                  <span>0</span>
+                  <button type="button" onclick="changeQty(this, 1)">+</button>
+                </div>
+              </div>
+              <div class="quantité-row">
+                <div class="quantité-control">
+                  <button type="button" onclick="changeQty(this, -1)">−</button>
+                  <span>0</span>
+                  <button type="button" onclick="changeQty(this, 1)">+</button>
+                </div>
+              </div>
+              <div class="quantité-row">
+                <div class="quantité-control">
+                  <button type="button" onclick="changeQty(this, -1)">−</button>
+                  <span>0</span>
+                  <button type="button" onclick="changeQty(this, 1)">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h4>3. Adresse/Pays</h4>
+          <div class="container-selection-adresse">
+            <div class="field">
+              <label for="country">Pays</label>
+              <select id="country" name="country">
+                <option value="albanie">Albanie</option>
+                <option value="andorre">Andorre</option>
+                <option value="autriche">Autriche</option>
+                <option value="belgique">Belgique</option>
+                <option value="bulgarie">Bulgarie</option>
+                <option value="croatie">Croatie</option>
+                <option value="chypre">Chypre</option>
+                <option value="republique-tcheque">République tchèque</option>
+                <option value="danemark">Danemark</option>
+                <option value="estonie">Estonie</option>
+                <option value="finlande">Finlande</option>
+                <option value="france">France</option>
+                <option value="allemagne">Allemagne</option>
+                <option value="grece">Grèce</option>
+                <option value="hongrie">Hongrie</option>
+                <option value="islande">Islande</option>
+                <option value="irlande">Irlande</option>
+                <option value="italie">Italie</option>
+                <option value="lettonie">Lettonie</option>
+                <option value="lituanie">Lituanie</option>
+                <option value="luxembourg">Luxembourg</option>
+                <option value="malte">Malte</option>
+                <option value="moldavie">Moldavie</option>
+                <option value="monaco">Monaco</option>
+                <option value="pays-bas">Pays-Bas</option>
+                <option value="norvege">Norvège</option>
+                <option value="pologne">Pologne</option>
+                <option value="portugal">Portugal</option>
+                <option value="roumanie">Roumanie</option>
+                <option value="serbie">Serbie</option>
+                <option value="espagne">Espagne</option>
+                <option value="suede">Suède</option>
+                <option value="suisse" selected>Suisse</option>
+                <option value="ukraine">Ukraine</option>
+                <option value="royaume-uni">Royaume-Uni</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="ville">Ville</label>
+              <select id="ville" name="ville">
+                <option value="fribourg">Fribourg</option>
+                <option value="berne">Berne</option>
+                <option value="geneve">Genève</option>
+                <option value="lausanne">Lausanne</option>
+                <option value="zurich">Zurich</option>
+              </select>
+            </div>
+          </div>
+        </section>
+
+        <hr class="form-separator" />
+
+        <div class="cgu">
+          <label class="cgu-item">
+            <input type="checkbox" name="cgu" required />
+            <span>J'accepte les conditions générales</span>
+          </label>
+          <label class="cgu-item">
+            <input type="checkbox" name="newsletter" />
+            <span>Je souhaite recevoir des actualités (optionnel)</span>
+          </label>
+        </div>
+
+        <button type="submit" class="submit-btn">Soumettre</button>
+      </form>
+    </div>
+
+    <script>
+      function changeQty(btn, delta) {
+        const span = btn.parentElement.querySelector("span");
+        let val = parseInt(span.textContent) + delta;
+        if (val < 0) val = 0;
+        span.textContent = val;
+      }
+    </script>
+  </body>
+</html>
