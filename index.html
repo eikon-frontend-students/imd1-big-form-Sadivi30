@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Grand Formulaire</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <img src="/photos/eurovision-logo.png" alt="Logo Eurovision" class="logo" />
+    <div class="cover">
+      <h1>Acheter des tickets</h1>
+      <h2>Réservez vos billets en 4 étapes simples et rapides!</h2>
+    </div>
+    <div class="form-container">
+      <h3>Commander en ligne</h3>
+      <h5>*Les billets seront envoyés à votre adresse e-mail</h5>
+
+      <form>
+        <section>
+          <h4>1. Informations personnelles</h4>
+
+          <div class="personal-info">
+            <div>
+              <label>Nom</label>
+              <input type="text" placeholder="Entrez votre nom" />
+            </div>
+
+            <div>
+              <label>E-mail</label>
+              <input type="email" placeholder="Entrez votre email" />
+            </div>
+
+            <div>
+              <label>Prénom</label>
+              <input type="text" placeholder="Entrez votre prénom" />
+            </div>
+
+            <div>
+              <label>Téléphone</label>
+              <input type="tel" placeholder="Entrez votre numéro" />
+            </div>
+          </div>
+
+          <h4>2. Sélection de billets</h4>
+
+          <div class="container-selection-billets">
+            <div class="checkbox">
+              <label>Évènement </label>
+              <div class="checkbox-item">
+                <label>Demi-final 1</label>
+                <input type="checkbox" />
+              </div>
+
+              <h5>Mardi 12 Mai 2026, 21:00 CEST</h5>
+
+              <div class="checkbox-item">
+                <label>Demi-final 2</label>
+                <input type="checkbox" />
+              </div>
+              <h5>Jeudi 14 Mai 2026, 21:00 CEST</h5>
+              <div class="checkbox-item">
+                <label>Grand Final</label>
+                <input type="checkbox" />
+              </div>
+              <h5>Samedi 16 Mai 2026, 21:00 CEST</h5>
+            </div>
+
+            <div class="select-billets">
+              <label>Type de billet</label>
+              <select>
+                <option>Standard</option>
+                <option>VIP</option>
+                <option>Fan Zone</option>
+              </select>
+              <select>
+                <option>Standard</option>
+                <option>VIP</option>
+                <option>Fan Zone</option>
+              </select>
+              <select>
+                <option>Standard</option>
+                <option>VIP</option>
+                <option>Fan Zone</option>
+              </select>
+            </div>
+          </div>
+
+          <h4>3. Adresse/Pays</h4>
+          <div class="container-selection-adresse">
+            <div class="selection-pays">
+              <label for="country">Pays</label>
+
+              <select id="country" name="country">
+                <option value="Albanie">Albanie</option>
+                <option value="Andorre">Andorre</option>
+                <option value="Autriche">Autriche</option>
+                <option value="Biélorussie">Biélorussie</option>
+                <option value="Belgique">Belgique</option>
+                <option value="Bosnie-Herzégovine">Bosnie-Herzégovine</option>
+                <option value="Bulgarie">Bulgarie</option>
+                <option value="Croatie">Croatie</option>
+                <option value="Chypre">Chypre</option>
+                <option value="République tchèque">République tchèque</option>
+                <option value="Danemark">Danemark</option>
+                <option value="Estonie">Estonie</option>
+                <option value="Finlande">Finlande</option>
+                <option value="France">France</option>
+                <option value="Allemagne">Allemagne</option>
+                <option value="Grèce">Grèce</option>
+                <option value="Hongrie">Hongrie</option>
+                <option value="Islande">Islande</option>
+                <option value="Irlande">Irlande</option>
+                <option value="Italie">Italie</option>
+                <option value="Lettonie">Lettonie</option>
+                <option value="Liechtenstein">Liechtenstein</option>
+                <option value="Lituanie">Lituanie</option>
+                <option value="Luxembourg">Luxembourg</option>
+                <option value="Malte">Malte</option>
+                <option value="Moldavie">Moldavie</option>
+                <option value="Monaco">Monaco</option>
+                <option value="Monténégro">Monténégro</option>
+                <option value="Pays-Bas">Pays-Bas</option>
+                <option value="Macédoine du Nord">Macédoine du Nord</option>
+                <option value="Norvège">Norvège</option>
+                <option value="Pologne">Pologne</option>
+                <option value="Portugal">Portugal</option>
+                <option value="Roumanie">Roumanie</option>
+                <option value="Saint-Marin">Saint-Marin</option>
+                <option value="Serbie">Serbie</option>
+                <option value="Slovaquie">Slovaquie</option>
+                <option value="Slovénie">Slovénie</option>
+                <option value="Espagne">Espagne</option>
+                <option value="Suède">Suède</option>
+                <option value="Suisse">Suisse</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="Royaume-Uni">Royaume-Uni</option>
+              </select>
+            </div>
+
+            <div class="selection-ville">
+              <div class="field">
+                <label>Ville</label>
+
+                <select id="ville">
+                  <option>Fribourg</option>
+                  <option>Kiev</option>
+                  <option>Paris</option>
+                  <option>Bruxelles</option>
+                </select>
+              </div>
+            </div>
+
+            <button class="submit-btn">Soumettre</button>
+            
+          
+        </section>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
