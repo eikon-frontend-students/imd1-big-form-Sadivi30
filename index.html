@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eurovision – Acheter des tickets</title>
-    <link rel="stylesheet" href="styles copie.css" />
+    <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,11 +16,6 @@
     <img src="/photos/eurovision-logo.png" alt="Logo Eurovision" class="logo" />
 
     <div class="cover">
-      <img
-        src="/photos/Eurovision-2026.jpg"
-        alt="Image de tickets"
-        class="form-image"
-      />
       <div class="cover-text">
         <h1>Acheter<br />des tickets</h1>
         <h2>Réservez vos billets en 3 étapes<br />simples et rapides !</h2>
@@ -237,14 +232,6 @@
         <button type="submit" class="submit-btn">Soumettre</button>
       </form>
     </div>
-
-    <script>
-      function changeQty(btn, delta) {
-        const span = btn.parentElement.querySelector("span");
-        let val = parseInt(span.textContent) + delta;
-        if (val < 0) val = 0;
-        span.textContent = val;
-      }
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
