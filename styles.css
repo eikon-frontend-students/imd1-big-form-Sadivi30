@@ -23,7 +23,7 @@ body {
 }
 
 .cover {
-  background-image: url("/photos/Eurovision-2026.jpg");
+  background-image: url("photos/Eurovision-2026.jpg");
   border-radius: 30px;
   background-size: cover;
   background-position: center;
